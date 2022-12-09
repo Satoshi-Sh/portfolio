@@ -1,15 +1,16 @@
 import { useLocation } from "react-router";
 import Header from "../../components/header/Header";
-import Index from "../../components/index/Index";
+import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
-import "./homepage.css";
+import "./blog.css";
 
-export default function Homepage() {
+export default function Blog() {
+  
   return (
     <>
-      <Header title='Home'/>
-      <div className="home">
-        <Index />
+      <Header title='Blog'/>
+      <div className="blog">
+        <Posts />
         <Sidebar />
       </div>
     </>

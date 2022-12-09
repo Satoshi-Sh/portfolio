@@ -1,40 +1,38 @@
 import { Link } from "react-router-dom";
 import "./post.css";
 
-export default function Post({img}) {
+export default function Post(props) {
+  const cats = props.post.categories 
+  
   return (
     <div className="post">
       <img
         className="postImg"
-        src={img}
-        alt=""
+        src={props.img}
+        alt="blog realted"
       />
       <div className="postInfo">
         <div className="postCats">
-          <span className="postCat">
-            <a className="link" to="/posts?cat=Music">
-              Music
+          {cats.map((category,i)=>{
+        return (
+        <span className='postCat' key={i}>
+            <a className='link'>
+                {category.name}
             </a>
-          </span>
-          <span className="postCat">
-            <a className="link" to="/posts?cat=Music">
-              Life
-            </a>
-          </span>
+        </span>)
+          })}
         </div>
         <span className="postTitle">
-          <a to="/post/abc" className="link">
-            Lorem ipsum dolor sit amet
-          </a>
+          <Link to={"/blog/" + props.post._id} className="link">
+            {props.post.title}
+          </Link>
         </span>
         <hr />
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">{'Created at ' + props.post.created_formatted}
+</span>
       </div>
       <p className="postDesc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-        officia architecto deserunt deleniti? Labore ipsum aspernatur magnam
-        fugiat, reprehenderit praesentium blanditiis quos cupiditate ratione
-        atque, exercitationem quibusdam, reiciendis odio laboriosam?
+        {props.post.shorten_text}
       </p>
     </div>
   );

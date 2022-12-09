@@ -1,0 +1,126 @@
+.index {
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+}
+
+.desc{
+    font-size:20px;
+    background-color: white;
+    border: solid 2px black;
+    width:80vw;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .desc-div{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+  
+    justify-content:center;
+  }
+  
+  
+  .work-logo{
+    height:80px;
+    width:auto;
+  }
+  
+  .img-desc{
+    width:300px;
+    margin:20px;
+    padding:20px;
+    background-color:antiquewhite;
+    border-radius:50% 50% 0 0
+  }
+  
+  .img-desc:hover{
+    scale:1.1;
+    background-color: #00bfb6;;
+  }
+  
+  .works {
+    display:flex;
+    justify-content: space-around;
+    text-align:center;
+    flex-wrap:wrap;
+  }
+  
+  
+  .lang{
+    width:auto;
+    height:60px;
+  }
+  
+  .langs-div{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap:wrap;
+  
+  }
+  
+  .icon-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-card:hover{
+    scale:1.1;
+    transform: translateY(-10px);
+  }
+
+
+.medium{
+    height:120px;
+    width:auto;
+    border-radius:20px;
+  }
+  
+  .circular-sb {
+    width: 400px;
+    border: 5px solid #00bfb6;
+    padding: 80px 0px;
+    margin: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: arial;
+    position: relative;
+    color: black;
+  }
+  
+  .circle1 {
+    border: 5px solid #00bfb6;
+    position: absolute;
+    width: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    right: -15px;
+    bottom: 23px;
+  }
+  
+  .circle1:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 0px;
+    background: #fff;
+  }
+  
+  .circle2 {
+    border: 5px solid #00bfb6;
+    position: absolute;
+    width: 5px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    right: -60px;
+    bottom: 5px;
+  }
