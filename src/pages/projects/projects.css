@@ -1,0 +1,55 @@
+.links {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    margin-top:15px;
+  }
+  .link a {
+    color:white;
+    text-decoration:none;
+    border: solid 2px white;
+    padding:5px;
+  }
+  
+  .link a:hover {
+    color:yellow;
+    border: solid 2px yellow;
+  }
+
+
+.project{
+    height:200px;
+    width:300px;
+    cursor:pointer;
+  }
+  .projects-div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:20px;
+  
+  }
+  
+  .project-card{
+    padding:30px;
+    background-color:gray;
+    border:solid 2px white;
+  }
+  
+  .title{
+    color:white;
+    margin:10px;
+  }
+
+  .popup{
+    padding:5px; 
+    width:300px;
+    border:solid 3px #00bfb6;
+    margin-left:20px;
+    margin-top:5px;
+  }
+  
+  .close{
+    background-color:rgba(255, 0, 0, 0.507);
+    font-size:15px;
+  }

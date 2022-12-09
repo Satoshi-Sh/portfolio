@@ -6,16 +6,28 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fab fa-facebook-square"></i>
-        <i className="topIcon fab fa-twitter-square"></i>
-        <i className="topIcon fab fa-pinterest-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
+        <a href="https://github.com/Satoshi-Sh/" target='_blank' rel="noreferrer">
+         <i className="topIcon fab fa-github-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/satoshi-89bb58a8/" target='_blank' rel="noreferrer">
+          <i className="topIcon fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.kaggle.com/satoshiss" target='_blank' rel="noreferrer">
+           <i className="topIcon fab fa-kaggle"></i>
+        </a>       
+        
       </div>
       <div className="topCenter">
         <ul className="topList">
-            <li className='topListItem'>Home</li>
-            <li className='topListItem'>About</li>
-            <li className='topListItem'>Contact</li>
+            <Link className="link" to='/'>
+               <li className='topListItem'>Home</li>
+            </Link>
+            <Link className="link" to='/about'>
+               <li className='topListItem'>About</li>
+            </Link>
+            <Link className='link' to='projects'>
+                <li className='topListItem'>Projects</li>
+            </Link>
             <li className='topListItem'>Write</li>
           {/* <li className="topListItem">
             <Link className="link" to="/">
