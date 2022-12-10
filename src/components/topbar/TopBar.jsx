@@ -59,8 +59,9 @@ export default function TopBar() {
       </div>
       <div className="topRight">
         <ul className="topList">
-            <li className="topListItem">Login</li>
-            <li className="topListItem">Register</li>
+            <Link className='link' to='/login'>
+               <li className="topListItem">Login</li>
+            </Link>
         </ul>
         {/* {user ? (
           <Link to="/settings">
