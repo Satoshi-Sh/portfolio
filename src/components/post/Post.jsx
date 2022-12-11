@@ -8,7 +8,7 @@ export default function Post(props) {
     <div className="post">
       <img
         className="postImg"
-        src={props.img}
+        src={props.post.imageURL}
         alt="blog realted"
       />
       <div className="postInfo">

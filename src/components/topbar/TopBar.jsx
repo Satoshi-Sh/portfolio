@@ -1,8 +1,32 @@
+import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 import { Link } from "react-router-dom";
 import "./topbar.css";
 
 export default function TopBar() {
- 
+  const token = localStorage.getItem('token')
+   
+  function removeToken(e){
+    e.preventDefault()
+    localStorage.removeItem('token')
+    window.location.href='/blog'
+
+  }
+
+  let log;
+  let write
+  if(token){
+     log =  <Link className='link' to='/logout'>
+               <li className="topListItem" onClick={removeToken}>Logout</li>
+            </Link>
+  }
+  else {
+    log =  <Link className='link' to='/login'>
+               <li className="topListItem">Login</li>
+            </Link>
+  }
+  token? write = <Link className='link' to='/write'>
+  <li className='topListItem'>Write</li>
+</Link>:write=''
   return (
     <div className="top">
       <div className="topLeft">
@@ -31,37 +55,12 @@ export default function TopBar() {
             <Link className='link' to='projects'>
                 <li className='topListItem'>Projects</li>
             </Link>
-            <li className='topListItem'>Write</li>
-          {/* <li className="topListItem">
-            <Link className="link" to="/">
-              HOME
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/">
-              ABOUT
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/">
-              CONTACT
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/write">
-              WRITE
-            </Link>
-          </li> */}
-          {/* <li className="topListItem" onClick={handleLogout}>
-            {user && "LOGOUT"}
-          </li> */}
+            {write}
         </ul>
       </div>
       <div className="topRight">
         <ul className="topList">
-            <Link className='link' to='/login'>
-               <li className="topListItem">Login</li>
-            </Link>
+            {log}
         </ul>
         {/* {user ? (
           <Link to="/settings">

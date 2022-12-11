@@ -9,6 +9,14 @@ import axios from'axios'
 const baseURL = 'http://localhost:5000/blogapi'
 
 export default function SinglePost() {
+    const token = localStorage.getItem('token')
+    let buttons;
+    if (token){
+      buttons = <div className="singlePostEdit">
+      <i className="singlePostIcon far fa-edit"></i>
+      <i className="singlePostIcon far fa-trash-alt"></i>
+    </div>
+    }
     // get id from url
     const id= useLocation()['pathname'].split('/').at(-1)
     let [post,setPost] = useState([])
@@ -28,15 +36,12 @@ export default function SinglePost() {
       <div className="singlePostWrapper">
         <img
           className="singlePostImg"
-          src={woods}
+          src={post.imageURL}
           alt=""
         />
         <h1 className="singlePostTitle">
           {post.title}
-          <div className="singlePostEdit">
-            <i className="singlePostIcon far fa-edit"></i>
-            <i className="singlePostIcon far fa-trash-alt"></i>
-          </div>
+          {buttons}
         </h1>
         <div className="singlePostInfo">
           <span>

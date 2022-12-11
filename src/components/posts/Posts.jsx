@@ -24,7 +24,7 @@ export default function Posts() {
     <div className="posts">
       {postsList.map((post,i)=>
       (
-        <Post key={i} img={rice} post={post}  />
+        <Post key={i} post={post}  />
       ))}  
     </div>
   );

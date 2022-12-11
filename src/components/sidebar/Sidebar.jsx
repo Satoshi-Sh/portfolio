@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
 import "./sidebar.css";
 import  rice from '../../images/avatar.jpg'
+import React, { useState, useEffect } from 'react';
+import axios from'axios'
+
+const baseURL = 'http://localhost:5000/blogapi/'
+
 
 export default function Sidebar() {
+  let [categories,setCategories] = useState([])
+  useEffect(()=>{
+    const fetchData= async ()=>{
+    const result = await axios(baseURL +'categories')
+    setCategories(result.data)
+  }
+  fetchData().catch((err)=>{
+    console.log(err.message)
+  }) 
+ },[])
   return (
     <div className="sidebar">
       <div className="sidebarItem">
@@ -18,32 +33,14 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
         <ul className="sidebarList">
-          <li className="sidebarListItem">
+        {categories.map((category,i)=>
+      (
+        <li key={i} className="sidebarListItem">
             <a className="link">
-              Life
+              {category.name}
             </a>
-          </li>
-          <li className="sidebarListItem">
-            <a className="link">
-              Music
-            </a>
-          </li>
-          <li className="sidebarListItem">
-            <a className="link">
-              Sport
-            </a>
-          </li>
-          <li className="sidebarListItem">
-            <a className="link">
-              Style
-            </a>
-          </li>
-          <li className="sidebarListItem">
-            <a className="link">
-              Tech
-            </a>
-          </li>
-          
+        </li>
+      ))} 
         </ul>
       </div>
       <div className="sidebarItem">

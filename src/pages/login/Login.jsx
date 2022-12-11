@@ -1,25 +1,33 @@
 import "./login.css";
-import './login.js'
+
 
 const baseURL = 'http://localhost:5000/auth/'
 
 export default function Login() {
   function handleSubmit(e) {
     e.preventDefault()
-    const username=  e.target.querySelector('#username').value
-    const password= e.target.querySelector('#password').value
-    fetch(`${baseURL}/login`,{
+    let username=  e.target.querySelector('#username')
+    let password= e.target.querySelector('#password')
+    fetch(`${baseURL}login`,{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify({
-            username,
-            password
+            username:username.value,
+            password:password.value
         })
         }).then(res =>res.json())
         .then(data=>{
-            console.log(data)
+            if(data['token']){
             window.localStorage.setItem("token",data['token'])
             window.location.href='/blog'
+            }
+            else{
+            let message = document.querySelector('.message')
+            message.style.display='block'
+            username.value=''
+            password.value=''
+            }
+            
         }).catch(err=>{throw err})
     }
   return (
@@ -32,6 +40,7 @@ export default function Login() {
         <input className="loginInput" id='password' type="password" placeholder="Enter your password..." />
         <button className="loginButton">Login</button>
       </form>
+      <p className='message' hidden>Failed to login.</p>
     </div>
   );
 }
