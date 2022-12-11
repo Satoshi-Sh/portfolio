@@ -11,10 +11,26 @@ const baseURL = 'http://localhost:5000/blogapi'
 export default function SinglePost() {
     const token = localStorage.getItem('token')
     let buttons;
+    let postId = useLocation()['pathname'].split('/').at(-1)
+    function deletePost(){
+      fetch(`${baseURL}/delete/${postId}`,
+      {method:'POST',
+       headers:{'Content-Type':'application/json'},
+       body:JSON.stringify({
+        token
+       })
+     }).then(res => res.json()).then(message=>{
+         console.log(message)
+         window.location.href='/blog'
+       }).catch(err=>{throw err})  
+
+      
+    }
+
     if (token){
       buttons = <div className="singlePostEdit">
       <i className="singlePostIcon far fa-edit"></i>
-      <i className="singlePostIcon far fa-trash-alt"></i>
+      <i className="singlePostIcon far fa-trash-alt" onClick={deletePost}></i>
     </div>
     }
     // get id from url
@@ -23,7 +39,6 @@ export default function SinglePost() {
   useEffect(()=>{
     const fetchData= async ()=>{
     const result = await axios(`${baseURL}/${id}`)
-    console.log(result.data)
     setPost(result.data)
   }
   fetchData().catch((err)=>{
