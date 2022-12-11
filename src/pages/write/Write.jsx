@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useEffect, useState } from "react";
 import "./write.css";
 import axios from "axios";
 import c from "../../images/avatar.jpg"
@@ -13,13 +13,33 @@ const baseURL = 'http://localhost:5000/blogapi/'
 
 
 export default function Write(){
+    // load categories 
+    let [cats,setCats] = useState([])
+  useEffect(()=>{
+    const fetchData= async ()=>{
+    const result = await axios(baseURL +'categories')
+    setCats(result.data)
+    
+  }
+  fetchData().catch((err)=>{
+    console.log(err.message)
+  }) 
+ },[])
+    
+    
+    // for form 
     const handleSubmit = (e)=>{
      e.preventDefault()
      const title = e.target.querySelector('#title').value
      const text = e.target.querySelector("#text").value
      const imageURL = e.target.querySelector('#imageURL').value
      const token = window.localStorage.getItem('token')
-     console.log(title)
+     const selects = e.target.querySelector('#categories').selectedOptions
+     let categories = []
+     for (let i=0; i<selects.length;i++){
+      categories.push(selects[i].value)
+     }
+     
 
      fetch(`${baseURL}write`,
      {method:'POST',
@@ -28,6 +48,7 @@ export default function Write(){
       token,
       title,
       text,
+      categories,
       imageURL,
       })
       
@@ -53,6 +74,17 @@ export default function Write(){
                 id='title'
                 autoFocus={true}
               />
+              <label className="writeInput" htmlFor='categories' >Categories</label>
+              <select id='categories' name='categories' multiple>
+              {cats.map((category,i)=>
+      (
+        <option key={i} className="option" value={category._id}>
+              {category.name}
+        </option>
+      ))} 
+      </select>
+
+
               <input
                 type="text"
                 placeholder="Image Url..."

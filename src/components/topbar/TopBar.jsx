@@ -1,6 +1,7 @@
 import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 import { Link } from "react-router-dom";
 import "./topbar.css";
+import c from "../../images/avatar.jpg"
 
 export default function TopBar() {
   const token = localStorage.getItem('token')
@@ -13,7 +14,8 @@ export default function TopBar() {
   }
 
   let log;
-  let write
+  let write;
+  let logo;
   if(token){
      log =  <Link className='link' to='/logout'>
                <li className="topListItem" onClick={removeToken}>Logout</li>
@@ -26,7 +28,12 @@ export default function TopBar() {
   }
   token? write = <Link className='link' to='/write'>
   <li className='topListItem'>Write</li>
-</Link>:write=''
+  </Link>:write=''
+  
+  token ? logo = <img src={c} className='logo'></img>
+  :logo=''
+
+
   return (
     <div className="top">
       <div className="topLeft">
@@ -80,7 +87,7 @@ export default function TopBar() {
             </li>
           </ul>
         )} */}
-        <i className="topSearchIcon fas fa-search"></i>
+        {logo}
       </div>
     </div>
   );

@@ -63,3 +63,13 @@
     text-decoration: none;
     color:black;
   }
+
+  .logo{
+    width:25px;
+    height:auto;
+    border-radius: 20px;
+  }
+
+  label{
+    color:rgba(128, 128, 128, 0.747)
+  }
