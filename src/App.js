@@ -8,6 +8,7 @@ import Blog from "./pages/blog/Blog"
 import Write from "./pages/write/Write"
 import Single from "./pages/single/Single"
 import Login from "./pages/login/Login"
+import Update from "./pages/update/Update"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exaxt path='/' element={<Homepage />}/>
           <Route path='/blog' element={<Blog />}/>
           <Route path='/blog/:id' element={<Single />}/>
+          <Route path='/blog/:id/update' element={<Update />} />
           <Route path='/write' element={<Write />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/projects' element={<Projects />}/>

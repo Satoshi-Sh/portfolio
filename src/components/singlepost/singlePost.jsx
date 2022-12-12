@@ -29,7 +29,9 @@ export default function SinglePost() {
 
     if (token){
       buttons = <div className="singlePostEdit">
+      <Link  to='./update'>  
       <i className="singlePostIcon far fa-edit"></i>
+      </Link>
       <i className="singlePostIcon far fa-trash-alt" onClick={deletePost}></i>
     </div>
     }
