@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/blogapi',
     createProxyMiddleware({
-      target: 'http://localhost:5000',
+      target: 'https://gleaming-erin-blazer.cyclic.app',
       changeOrigin: true,
     })
   );
