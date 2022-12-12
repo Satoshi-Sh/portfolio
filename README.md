@@ -2,6 +2,10 @@
  This react app has a backend for Blog page hosted on Cyclic. Used passport to authenticate user. 
  https://github.com/Satoshi-Sh/backend
 
+ ## reference 
+Used this video as a reference for blog page's design. 
+https://www.youtube.com/watch?v=LelifxOrzvw 
+
 
 
 
