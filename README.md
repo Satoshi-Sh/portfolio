@@ -1,5 +1,5 @@
 # Full stack with Express
- This react app has a backend for Blog page hosted on Cyclic. 
+ This react app has a backend for Blog page hosted on Cyclic. Used passport to authenticate user. 
  https://github.com/Satoshi-Sh/backend
 
 
