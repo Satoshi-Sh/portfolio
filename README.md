@@ -1,3 +1,12 @@
+# Full stack with Express
+ This react app has a backend for Blog page hosted on Cyclic. 
+ https://github.com/Satoshi-Sh/backend
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

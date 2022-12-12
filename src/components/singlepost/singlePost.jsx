@@ -6,7 +6,7 @@ import axios from'axios'
 
 
 
-const baseURL = 'http://localhost:5000/blogapi'
+const baseURL = 'https://gleaming-erin-blazer.cyclic.app/blogapi'
 
 export default function SinglePost() {
     const token = localStorage.getItem('token')

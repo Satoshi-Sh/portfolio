@@ -9,7 +9,7 @@ import c from "../../images/avatar.jpg"
 // import uploader from '../../uploader.js'
 
 
-const baseURL = 'http://localhost:5000/blogapi/'
+const baseURL = 'https://gleaming-erin-blazer.cyclic.app/blogapi/'
 
 
 

@@ -5,3 +5,11 @@
     margin: 20px;
     justify-content: center;
 }
+
+.catTitle{
+    font-family: "Lora", serif;
+    font-size:25px;
+    color: black;
+    text-shadow: 1px 0 silver;
+    
+}

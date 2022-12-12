@@ -16,9 +16,9 @@ export default function Post(props) {
           {cats.map((category,i)=>{
         return (
         <span className='postCat' key={i}>
-            <a className='link'>
+            <Link className='link' to={"/blog?category=" + category._id +"&name=" +category.name }>
                 {category.name}
-            </a>
+            </Link>
         </span>)
           })}
         </div>

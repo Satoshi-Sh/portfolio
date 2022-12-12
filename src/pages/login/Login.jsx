@@ -1,7 +1,7 @@
 import "./login.css";
 
 
-const baseURL = 'http://localhost:5000/auth/'
+const baseURL = 'https://gleaming-erin-blazer.cyclic.app/auth/'
 
 export default function Login() {
   function handleSubmit(e) {

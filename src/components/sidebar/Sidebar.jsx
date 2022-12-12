@@ -4,7 +4,7 @@ import  rice from '../../images/avatar.jpg'
 import React, { useState, useEffect } from 'react';
 import axios from'axios'
 
-const baseURL = 'http://localhost:5000/blogapi/'
+const baseURL = 'https://gleaming-erin-blazer.cyclic.app/blogapi/'
 
 
 export default function Sidebar() {
@@ -36,9 +36,9 @@ export default function Sidebar() {
         {categories.map((category,i)=>
       (
         <li key={i} className="sidebarListItem">
-            <a className="link">
+            <Link className="link" to={"/blog?category=" + category._id +"&name=" +category.name}>
               {category.name}
-            </a>
+            </Link>
         </li>
       ))} 
         </ul>
