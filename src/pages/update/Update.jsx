@@ -20,6 +20,7 @@ export default function Update(){
     let [title,setTitle] = useState('')
     let [url,setUrl] = useState('')
     let [text,setText] = useState('')
+    let [id,setId] = useState('')
 
     let [cas,setCas] = useState([])
   useEffect(()=>{
@@ -34,12 +35,11 @@ export default function Update(){
  },[])
  useEffect(()=>{
     const fetchData= async ()=>{
-    console.log(postId)
     const result = await axios(baseURL +postId)
-    console.log(result.data)
     setTitle(result.data.title)
     setUrl(result.data.imageURL)
     setText(result.data.text)
+    setId(result.data._id)
     let ls = []
     for (let i=0; i<result.data.categories.length;i++)
     {
@@ -59,9 +59,9 @@ export default function Update(){
     // for form 
     const handleSubmit = (e)=>{
      e.preventDefault()
-     const title = e.target.querySelector('#title').value
-     const text = e.target.querySelector("#text").value
-     const imageURL = e.target.querySelector('#imageURL').value
+    //  const title = e.target.querySelector('#title').value
+    //  const text = e.target.querySelector("#text").value
+    //  const imageURL = e.target.querySelector('#imageURL').value
      const token = window.localStorage.getItem('token')
      const selects = e.target.querySelector('#categories').selectedOptions
      let categories = []
@@ -70,7 +70,7 @@ export default function Update(){
      }
      
 
-     fetch(`${baseURL}write`,
+     fetch(`${baseURL}/update/${id}`,
      {method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({
@@ -78,12 +78,12 @@ export default function Update(){
       title,
       text,
       categories,
-      imageURL,
+      imageURL:url,
       })
       
     }).then(res => res.json()).then(message=>{
         console.log(message)
-        window.location.href='/blog'
+        window.location.href=`/blog/${id}`
       }).catch(err=>{throw err})
     }
      

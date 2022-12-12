@@ -42,6 +42,8 @@ export default function SinglePost() {
     const fetchData= async ()=>{
     const result = await axios(`${baseURL}/${id}`)
     setPost(result.data)
+    console.log(post.text.split('\n'))
+    
   }
   fetchData().catch((err)=>{
     console.log(err.message)
@@ -67,9 +69,11 @@ export default function SinglePost() {
           </span>
           <span>{post.created_formatted}</span>
         </div>
-        <p className="singlePostDesc">
-         {post.text}
-        </p>
+         {post.text?.split('\n').map((p,i)=>
+          {
+            return(
+            <p key={i} className="singlePostDesc">{p}</p>)
+          })}
       </div>
     </div>
   );
