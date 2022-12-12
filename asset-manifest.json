@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.125f1883.css",
+    "main.js": "/portofolio/static/js/main.e868bf75.js",
+    "static/js/787.22edae46.chunk.js": "/portofolio/static/js/787.22edae46.chunk.js",
+    "static/media/Wheres_Waldo.png": "/portofolio/static/media/Wheres_Waldo.a4ac6dd564bbd326734e.png",
+    "static/media/Memory_Card.png": "/portofolio/static/media/Memory_Card.79b9c9e6eff57c7f6973.png",
+    "static/media/Shopping_Cart.png": "/portofolio/static/media/Shopping_Cart.e4c09c935240db1a5cdc.png",
+    "static/media/bootstrap.png": "/portofolio/static/media/bootstrap.74639664fdc9d7968597.png",
+    "static/media/kaggle.png": "/portofolio/static/media/kaggle.699e845f421e77352eac.png",
+    "static/media/avatar.jpg": "/portofolio/static/media/avatar.252f92cbc09e17713f79.jpg",
+    "static/media/logo.jpg": "/portofolio/static/media/logo.252f92cbc09e17713f79.jpg",
+    "static/media/woods.jpg": "/portofolio/static/media/woods.653f286ed6d1a94fba59.jpg",
+    "static/media/Slack_Mock.png": "/portofolio/static/media/Slack_Mock.9632e125b38dce125f6b.png",
+    "static/media/mongoose.png": "/portofolio/static/media/mongoose.998152e4bc5fdd366c2c.png",
+    "static/media/firebase.png": "/portofolio/static/media/firebase.49bc623ca721e1db5805.png",
+    "static/media/pug.png": "/portofolio/static/media/pug.1ed4f0828e2785367ffa.png",
+    "static/media/react.png": "/portofolio/static/media/react.6ab7e2e9a04e78b4e9c6.png",
+    "static/media/cat.png": "/portofolio/static/media/cat.efdb9a797d18d3084468.png",
+    "static/media/Todo_List.png": "/portofolio/static/media/Todo_List.e8c327c962706fb45ffa.png",
+    "static/media/jest.png": "/portofolio/static/media/jest.809768de8350fa5f6a21.png",
+    "static/media/webpack.png": "/portofolio/static/media/webpack.73f95c1c299540c84e4b.png",
+    "static/media/Calculator.png": "/portofolio/static/media/Calculator.0d883b44350cf66f33d9.png",
+    "static/media/django.png": "/portofolio/static/media/django.4c677b78d12c96ea7add.png",
+    "static/media/JavaScript.png": "/portofolio/static/media/JavaScript.621f6061172a58343b60.png",
+    "static/media/mongodb.png": "/portofolio/static/media/mongodb.abda074030b9b0f90a42.png",
+    "static/media/git.png": "/portofolio/static/media/git.299bbdfff294259dab75.png",
+    "static/media/express.png": "/portofolio/static/media/express.034db57c567c0257d534.png",
+    "static/media/Python.svg": "/portofolio/static/media/Python.e6b5bdf0df1ebd61877e.svg",
+    "index.html": "/portofolio/index.html",
+    "main.125f1883.css.map": "/portofolio/static/css/main.125f1883.css.map",
+    "main.e868bf75.js.map": "/portofolio/static/js/main.e868bf75.js.map",
+    "787.22edae46.chunk.js.map": "/portofolio/static/js/787.22edae46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.125f1883.css",
+    "static/js/main.e868bf75.js"
+  ]
+}
