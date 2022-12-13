@@ -19,7 +19,7 @@ export default function Login() {
         .then(data=>{
             if(data['token']){
             window.localStorage.setItem("token",data['token'])
-            window.location.href='/blog'
+            window.location.href='/portfolio/blog'
             }
             else{
             let message = document.querySelector('.message')
