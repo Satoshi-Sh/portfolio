@@ -1,9 +1,11 @@
 import "./login.css";
+import { useNavigate } from 'react-router-dom';
 
 
 const baseURL = 'https://gleaming-erin-blazer.cyclic.app/auth/'
 
 export default function Login() {
+  const navigate = useNavigate()
   function handleSubmit(e) {
     e.preventDefault()
     let username=  e.target.querySelector('#username')
@@ -19,7 +21,7 @@ export default function Login() {
         .then(data=>{
             if(data['token']){
             window.localStorage.setItem("token",data['token'])
-            window.location.href='/portfolio/blog'
+            navigate('/blog')
             }
             else{
             let message = document.querySelector('.message')
