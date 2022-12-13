@@ -21,7 +21,7 @@ export default function SinglePost() {
        })
      }).then(res => res.json()).then(message=>{
          console.log(message)
-         window.location.href='/blog'
+         window.location.href='/portfolio/blog'
        }).catch(err=>{throw err})  
 
       
