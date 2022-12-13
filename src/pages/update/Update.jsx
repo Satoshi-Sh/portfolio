@@ -85,7 +85,6 @@ export default function Update(){
     }).then(res => res.json()).then(message=>{
         console.log(message)
         navigate(`/blog/${id}`)
-        window.location.href=`/portfolio/blog/${id}`
       }).catch(err=>{throw err})
     }
      
