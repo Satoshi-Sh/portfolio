@@ -1,8 +1,8 @@
 @media screen and (max-width: 640px){
-  .post {
+  .posts.post {
     width:200px
   }
-  .postImg{
+  .post.postImg{
     width:200px
   }
 }
