@@ -1,3 +1,21 @@
+@media screen and (max-width: 640px)
+{
+  
+ .cicle1{
+ display:none;
+ }
+ .circle2{
+  display:none;
+ }
+ 
+ .box1.sb8{
+  width:70vw;
+  margin-left:5px;
+ }
+ .index {overflow-x: hidden;}
+}
+
+
 .index {
     display:flex;
     flex-direction: column;

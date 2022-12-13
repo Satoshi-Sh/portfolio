@@ -36,7 +36,7 @@ export default function TopBar() {
 
   return (
     <div className="top">
-      <div className="topLeft">
+      <div className="topLeft" >
         <a href="https://github.com/Satoshi-Sh/" target='_blank' rel="noreferrer">
          <i className="topIcon fab fa-github-square"></i>
         </a>

@@ -2,10 +2,9 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "proxy": [
-    "http://localhost:5000",
+  "proxy": 
     "https://gleaming-erin-blazer.cyclic.app"
-  ],
+  ,
   "homepage": "http:/satoshi-sh.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
