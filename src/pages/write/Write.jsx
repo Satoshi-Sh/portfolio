@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./write.css";
 import axios from "axios";
 import c from "../../images/avatar.jpg"
+import { useNavigate } from 'react-router-dom';
+
 
 // cannot use the function on my front end 
 // for now just add image link instead of uploading image here
@@ -15,6 +17,7 @@ const baseURL = 'https://gleaming-erin-blazer.cyclic.app/blogapi/'
 export default function Write(){
     // load categories 
     let [cats,setCats] = useState([])
+    const navigate = useNavigate()
   useEffect(()=>{
     const fetchData= async ()=>{
     const result = await axios(baseURL +'categories')
@@ -54,7 +57,7 @@ export default function Write(){
       
     }).then(res => res.json()).then(message=>{
         console.log(message)
-        window.location.href='/portfolio/blog'
+        navigate('/blog')
       }).catch(err=>{throw err})
     }
      

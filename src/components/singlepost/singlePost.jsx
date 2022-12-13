@@ -1,4 +1,4 @@
-import { Link,useLocation } from "react-router-dom";
+import { Link,useLocation,useNavigate } from "react-router-dom";
 import "./singlepost.css";
 import woods from '../../images/woods.jpg'
 import React, { useState, useEffect } from 'react';
@@ -9,6 +9,7 @@ import axios from'axios'
 const baseURL = 'https://gleaming-erin-blazer.cyclic.app/blogapi'
 
 export default function SinglePost() {
+    const navigate = useNavigate()
     const token = localStorage.getItem('token')
     let buttons;
     let postId = useLocation()['pathname'].split('/').at(-1)
@@ -21,7 +22,7 @@ export default function SinglePost() {
        })
      }).then(res => res.json()).then(message=>{
          console.log(message)
-         window.location.href='/portfolio/blog'
+         navigate('/blog')
        }).catch(err=>{throw err})  
 
       

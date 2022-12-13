@@ -1,15 +1,15 @@
-import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./topbar.css";
 import c from "../../images/avatar.jpg"
 
+
 export default function TopBar() {
   const token = localStorage.getItem('token')
-   
+  const navigate = useNavigate()
   function removeToken(e){
     e.preventDefault()
     localStorage.removeItem('token')
-    window.location.href='/blog'
+    navigate('/blog')
 
   }
 

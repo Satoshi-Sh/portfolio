@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./update.css";
-import { Link,useLocation } from "react-router-dom";
+import { Link,useLocation,useNavigate } from "react-router-dom";
 import axios from "axios";
 import c from "../../images/avatar.jpg"
 
@@ -15,6 +15,7 @@ const baseURL = 'https://gleaming-erin-blazer.cyclic.app/blogapi/'
 
 export default function Update(){
     const postId = useLocation()['pathname'].split('/').at(-2)
+    const navigate = useNavigate();
     // load categories 
     let [cats,setCats] = useState([])
     let [title,setTitle] = useState('')
@@ -83,6 +84,7 @@ export default function Update(){
       
     }).then(res => res.json()).then(message=>{
         console.log(message)
+        navigate(`/blog/${id}`)
         window.location.href=`/portfolio/blog/${id}`
       }).catch(err=>{throw err})
     }
