@@ -1,4 +1,4 @@
-# Full stack with Express
+# Full Stack Portfolio Website with Express
  The front end was made with React and hosted on GitHub, and the back end was made with Express hosted on Cyclic. The front-end page gets the data from MongoDB through API calls. Passport was used to authenticate the writer(me). Everyone can read blog posts here and logged-in users can make a new post, update, and delete. https://github.com/Satoshi-Sh/backend
 
  Live page: https://satoshi-sh.github.io/portfolio/
