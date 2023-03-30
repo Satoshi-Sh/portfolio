@@ -3,7 +3,7 @@
 
  Live page: https://satoshi-sh.github.io/portfolio/
 
- ## reference 
+## Reference 
 Used this video as a reference for blog page's design. 
 https://www.youtube.com/watch?v=LelifxOrzvw 
 
