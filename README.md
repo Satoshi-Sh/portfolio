@@ -7,10 +7,13 @@
 </p>
 
 ### Description
- The frontend was made with React and hosted on GitHub, and the backend was made with Express on Cyclic. The frontend page gets the data from MongoDB through API calls. Passport was used to authenticate the writer(me). Everyone can read blog posts here and logged-in users can make a new post, update, and delete. https://github.com/Satoshi-Sh/backend
+ The frontend was made with React and hosted on GitHub, and the backend was made with Express on Cyclic. The frontend page gets the data from MongoDB through API calls. Passport was used to authenticate registered users. Anyone can read blog posts, and logged-in users can make a new post, update, and delete. 
+
+[Backend Repo](https://github.com/Satoshi-Sh/backend)
+
 
 ### Live Page
-https://satoshi-sh.github.io/portfolio/
+[Live Page](https://satoshi-sh.github.io/portfolio/)
 
 ### Teachnologies Used 
 - React
@@ -26,4 +29,5 @@ https://satoshi-sh.github.io/portfolio/
 
 ### Reference 
 Used this video as a reference for blog page's design. 
-https://www.youtube.com/watch?v=LelifxOrzvw 
+[Video Link](https://www.youtube.com/watch?v=LelifxOrzvw)
+ 
