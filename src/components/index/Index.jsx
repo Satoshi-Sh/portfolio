@@ -100,7 +100,7 @@ const Index = ()=>{
                 <a href="https://satoshi40.pythonanywhere.com/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='Cat logo' src={cat}></img>
                 </a>
-                <p>Django Portofolio</p>
+                <p>Django Portfolio</p>
              </motion.div>
           </motion.div>
        </div> 

@@ -6,6 +6,16 @@
     justify-content: center;
 }
 
+#sleeping {
+    padding:20px;
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .catTitle{
     font-family: "Lora", serif;
     font-size:25px;

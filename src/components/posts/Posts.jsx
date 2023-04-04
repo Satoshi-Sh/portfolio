@@ -21,7 +21,15 @@ export default function Posts() {
     console.log(err.message)
   }) 
  },[query])
-
+  
+  if (postsList.length==0) {
+     return (
+      <div id='sleeping'>
+      <p id='sl-message'>*Sorry, my Backend server was sleeping... 
+        Could you come back from another tab?</p>
+      </div>
+     )
+  }
  
   return (
     <div><h1 className="catTitle">{name}</h1>

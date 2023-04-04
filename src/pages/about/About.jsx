@@ -14,12 +14,11 @@ const About = ()=>{
        <div className="box1 sb8">
         <h3 className='header'>About Website</h3>
         <p>This website was made to practice building a full stack website with MERN(MongoDB, Express, React, and Node.js).
-           Hosted on AWS.
         </p>
 
         <h3 className='header'>Myself</h3>
         <p>Hello, my name is Satoshi. I'm originally from Japan. Since I immigrated to Canada,
-          I had various jobs from kitchens to offices.
+          I have experienced various jobs from kitchens to offices.
         </p>
         <p>  
           At my last work, I was in a department which took care of data entry for business partners.
@@ -33,11 +32,11 @@ const About = ()=>{
            Flask, PHP, React, Express, and so on through Online learning materials and on my own projects. 
         </p>
         <p>
-           I believe it's time for me to get into the tech industry as a webdeveloper. I made this website as my portofolio. Hope you enjoyed reading this. 
+           I believe it's time for me to get into the tech industry as a web developer. I made this website as my portofolio. Hope you enjoyed reading this. 
         </p>
 
         <h3 className='header'>My Hobby</h3>
-        <p>I like music. I play the guitar and the piano. Sometimes make my music and upload it on a social website for musicians. I also like to paly Shogi(Japanese Chess). My goal for Shogi is to be 3 dan(3rd degree black belt).</p>
+        <p>I like music. I play the guitar and the piano. Sometimes make my music and upload it on a social website for musicians. I also like to paly Shogi (Japanese Chess). My goal for Shogi is to be 3 dan (3rd degree black belt).</p>
 
 
         </div>
