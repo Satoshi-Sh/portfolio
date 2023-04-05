@@ -13,8 +13,8 @@ const Projects = ()=>{
     const  [selectedName,setSelectedName]=useState(null)
     const pros = importAll(require.context('../../images/projects'))
     const descriptions = {
-      'Calculator':'Calculator Application was made with Javascript Object to organize codes.',
-      'Memory Card':'This game was made by React. Used various react functions to make the game interactive.',
+      'Take Stairs':"This application keeps track of user's stair exercises. Users just need to put how many stairs they climb up and down. It shows the stats by bar and line plots, visualized data with Recharts. API was created with express, interaction with MongoDB to get stored data. Passport.js was used to authorize the user.",
+      'Memory Game2':'Memory Card game was build with React. Used React Router DOM to switch pages and React Context to change the design of the whole application (You can click on the card in the navigation bar to change). JavaScript classes was used to build trump card deck, to keep the code clearner.',
       'Shopping Cart':'Shopping Cart was made by React. User can make a mock order on this application.',
       'Slack Mock':'Used React and Firebase. Once account is created, the user can make a post on a specific topic thread.',
       'Todo List':'User can make to do list. Local storage is used to keep data. Javascript object was used to organized the code.',
