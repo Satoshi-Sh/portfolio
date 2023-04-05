@@ -52,7 +52,6 @@
     margin:20px;
     padding:20px;
     background-color:antiquewhite;
-    border-radius:50% 50% 0 0
   }
   
   .img-desc:hover{
@@ -65,6 +64,11 @@
     justify-content: space-around;
     text-align:center;
     flex-wrap:wrap;
+  }
+
+  .work-name{
+    text-decoration:none;
+    color:black;
   }
   
   

@@ -67,41 +67,41 @@ const Index = ()=>{
           }}
          }
           className='works'>
+            <a class='work-name' href="https://github.com/Satoshi-Sh/" target='_blank' rel="noreferrer">
              <motion.div initial={{y:20,opacity:0}}
              whileInView={{y:0, opacity:1}}
              className='img-desc'>
-                <a href="https://github.com/Satoshi-Sh/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='github logo' src={git}></img>
-                </a>
                 <p>Github Profile</p>
              </motion.div>
+             </a>
+             <a class='work-name' href="https://www.kaggle.com/satoshiss" target='_blank' rel="noreferrer">
              <motion.div 
              initial={{y:20,opacity:0}}
              whileInView={{y:0, opacity:1}}
              className='img-desc'>
-                <a href="https://www.kaggle.com/satoshiss" target='_blank' rel="noreferrer">
-                    <img className='work-logo' alt='kaggle logo' src={kaggle}></img>
-                </a>
+                <img className='work-logo' alt='kaggle logo' src={kaggle}></img>
                 <p>Kaggle Profile</p>
              </motion.div>
+             </a>
+             <a class='work-name' href="https://www.linkedin.com/in/satoshi-89bb58a8/" target='_blank' rel="noreferrer">
              <motion.div
              initial={{y:20,opacity:0}}
              whileInView={{y:0, opacity:1}}
              className='img-desc'>
-                <a href="https://www.linkedin.com/in/satoshi-89bb58a8/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='Linkedin logo' src={linkedin}></img>
-                </a>
                 <p>Linkedin Profile</p>
              </motion.div>
+             </a>
+             <a class='work-name' href="https://satoshi40.pythonanywhere.com/" target='_blank' rel="noreferrer">
              <motion.div
              initial={{y:20,opacity:0}}
              whileInView={{y:0, opacity:1}}
              className='img-desc'>
-                <a href="https://satoshi40.pythonanywhere.com/" target='_blank' rel="noreferrer">
                     <img className='work-logo' alt='Cat logo' src={cat}></img>
-                </a>
                 <p>Django Portfolio</p>
              </motion.div>
+             </a>
           </motion.div>
        </div> 
        
