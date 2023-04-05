@@ -10,7 +10,7 @@ export default function Header(props){
           </div>
           <img
             className="headerImg"
-            src={woods}
+            src='https://res.cloudinary.com/dmaijlcxd/image/upload/v1670714103/cld-sample-2.jpg'
             alt="sunset"
           />
         </div>
