@@ -16,6 +16,7 @@ const Projects = ()=>{
       'Take Stairs':"This application keeps track of user's stair exercises. Users just need to put how many stairs they climb up and down. It shows the stats by bar and line plots, visualized data with Recharts. API was created with express, interaction with MongoDB to get stored data. Passport.js was used to authorize the user.",
       'Memory Game2':'Memory Card game was build with React. Used React Router DOM to switch pages and React Context to change the design of the whole application (You can click on the card in the navigation bar to change). JavaScript classes was used to build trump card deck, to keep the code clearner.',
       'Shopping Cart':'Shopping Cart was made by React. User can make a mock order on this application.',
+      'Typing Game':'Typing game was made with React, hosted on GitHub page. Typewriter Effect was used to make typing animation in the start page. Users can choose sound (on/off) and difficulty level.',
       'Slack Mock':'Used React and Firebase. Once account is created, the user can make a post on a specific topic thread.',
       'Todo List':'User can make to do list. Local storage is used to keep data. Javascript object was used to organized the code.',
       'Wheres Waldo':"Where's Waldo game with Ghibli characters made with React. Firebase was used to keep the character locations and time score of users."
