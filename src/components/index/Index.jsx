@@ -51,13 +51,13 @@ const Index = ()=>{
          <img className='medium' src={logo} alt='logo'></img>  
          
          <div className="circular-sb">
-         An aspiring <span className='role'> Web Developer </span> and <span className='role'> Data Analyst </span> with an Econimics Degree.
+         An aspiring <span className='role'> Web Developer </span> and <span className='role'> Data Analyst </span> with an Economics Degree.
          <div className="circle1"></div>
          <div className="circle2"></div>
          </div>
        </motion.div>
        <div className='work-div'>
-          <h2>My Works</h2>
+          <h2>My Work</h2>
           <motion.div
           transition={{duration:1.0}}
           initial={{ opacity:1,scale:0}}

@@ -27,7 +27,7 @@ export default function Sidebar() {
           alt="avatar"
         />
         <p>
-          Aspring webdeveloper and data analyst. Proficient with Python, Javascript, HTML, and CSS.
+          Aspring web developer and data analyst. Proficient with Python, Javascript, HTML, and CSS.
         </p>
       </div>
       <div className="sidebarItem">

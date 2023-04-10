@@ -14,9 +14,8 @@ const Projects = ()=>{
     const pros = importAll(require.context('../../images/projects'))
     const descriptions = {
       'Take Stairs':"This application keeps track of user's stair exercises. Users just need to put how many stairs they climb up and down. It shows the stats by bar and line plots, visualized data with Recharts. API was created with express, interaction with MongoDB to get stored data. Passport.js was used to authorize the user.",
-      'Memory Game2':'Memory Card game was build with React. Used React Router DOM to switch pages and React Context to change the design of the whole application (You can click on the card in the navigation bar to change). JavaScript classes was used to build trump card deck, to keep the code clearner.',
+      'Memory Game2':'Memory Card game was build with React. Used React Router DOM to switch pages and React Context to change the design of the whole application (You can click on the card in the navigation bar to change). JavaScript classes was used to build cards, to keep the code clean.',
       'Typing Game':'Typing game was made with React, hosted on GitHub page. Typewriter Effect was used to make typing animation in the start page. Users can choose sound (on/off) and difficulty level.',
-      'Todo List':'User can make to do list. Local storage is used to keep data. Javascript object was used to organized the code.',
       'Django Portfolio':'Fullstack website created with Django, hosted on Pythonanywhere, and showcasing projects and blog posts. Used flexbox and bootstrap to design the page layouts, and Sqllite as a database. Blog posts can be searched by categories.'
     }
     const content = Object.entries(pros)
