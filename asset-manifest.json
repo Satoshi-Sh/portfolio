@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.609b5642.css",
-    "main.js": "/portfolio/static/js/main.97bfc133.js",
+    "main.js": "/portfolio/static/js/main.61de1374.js",
     "static/js/787.22edae46.chunk.js": "/portfolio/static/js/787.22edae46.chunk.js",
     "static/media/Django_Portfolio.png": "/portfolio/static/media/Django_Portfolio.5f1f48af34afcdf124bb.png",
     "static/media/Typing_Game.png": "/portfolio/static/media/Typing_Game.2876bc6af39b804d30cd.png",
@@ -27,11 +27,11 @@
     "static/media/Python.svg": "/portfolio/static/media/Python.e6b5bdf0df1ebd61877e.svg",
     "index.html": "/portfolio/index.html",
     "main.609b5642.css.map": "/portfolio/static/css/main.609b5642.css.map",
-    "main.97bfc133.js.map": "/portfolio/static/js/main.97bfc133.js.map",
+    "main.61de1374.js.map": "/portfolio/static/js/main.61de1374.js.map",
     "787.22edae46.chunk.js.map": "/portfolio/static/js/787.22edae46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.609b5642.css",
-    "static/js/main.97bfc133.js"
+    "static/js/main.61de1374.js"
   ]
 }
